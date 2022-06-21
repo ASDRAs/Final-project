@@ -5,10 +5,46 @@
 #EEEEEE 어두운 흰색
 */
 
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GothicA1-Light';
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
 h1 {
 
 }
 
 .post {
-  background-color: #222831;
+    background-color: #393E46;
+    border-radius: 15px;
+    margin: 20px 20px 1px 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+.top {
+    background-color: #222831;
+    height: 80px;
+    color: #393E46;
+}
+
+a { text-decoration: none;}
+a:visited { text-decoration: none; }
+a:hover {
+    text-decoration: none;
+    color: #00ADB5;
+}
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.contents {
+    background-color: #EEEEEE;
+    color: #222831;
 }
