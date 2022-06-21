@@ -17,7 +17,6 @@ SECRET_KEY = 'django-insecure-h6y!)3tvh962q9v&#%40b4!5_np@0m2f66t%8)7)4a^l0dma34
 DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'djangoblogpj.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -105,7 +104,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
