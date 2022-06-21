@@ -1,13 +1,17 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <a href="{% url 'posts' %}">
-        Post List
-    </a>
+    <div class="top border">
+        <a href="{% url 'posts' %}" class="create-post">
+            Post List
+        </a>
+    </div>
     <h1>Create Blog post</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="border">Save</button>
-    </form>
+    <div class="white contents">
+        <form method="POST" style="margin: 15px">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="border">Save</button>
+        </form>
+    </div>
 {% endblock %}

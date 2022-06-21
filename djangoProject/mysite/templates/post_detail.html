@@ -5,16 +5,16 @@
       Post List
     </a>
   </div>
-  <div>
+  <div class="gray-block" style="padding: 10px; margin: 15px">
     <h1>
       {{ post.title }}
     </h1>
-    <p>created: {{ post.created_at }}</p>
-    <p>updated: {{ post.updated_at }}</p>
-    <p>published: {{ post.published_at }}</p>
-    <p>author: {{ post.author.username }}</p>
+    <p style="text-align: end; font-size:15px;">created: {{ post.created_at }}</p>
+    <p style="text-align: end; font-size:15px;">updated: {{ post.updated_at }}</p>
+    <p style="text-align: end; font-size:15px;">published: {{ post.published_at }}</p>
+    <p style="text-align: end; font-size:15px;">author: {{ post.author.username }}</p>
   </div>
-  <div class="contents white">
+  <div class="contents white" style="margin: 15px">
     <p>{{ post.content | linebreaksbr }}</p>
   </div>
 {% endblock %}
